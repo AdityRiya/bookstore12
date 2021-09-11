@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>BookStore Gift Product</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px ;
+            font-family: 'Poppins', sans-serif;
+        }
+        .First_div{
+           
+            width: 100%;
+            padding: 15px 10px;
+            background: #FF2DA4;
+
+           
+        }
+        .first_Sub_Div{
+            width: 85% ;
+            
+            margin: auto;
+            display: flex;
+            font-family: Poppins;
+            font-style: normal;
+            
+            font-size: 16px;
+            line-height: 28px;
+            color: #FFFFFF;           
+        }
+        .f-s-div{
+            width: 25%;
+            line-height: 28px;
+        }
+        .s-s-div{
+            width: 25%;
+            line-height: 28px;
+        }
+        .t-s-div{
+            width: 40%;
+            line-height: 28px;
+            text-align: right;
+        }
+        .First_div i{
+             padding: 0px 5px;
+        }
+        @media only screen and (max-width: 700px) {
+            .first_Sub_Div{
+                width:100% ;
+                display: block;
+            }
+            .f-s-div{
+            width: 100%;
+        }
+            .s-s-div{
+            width: 100%;
+        }
+        .t-s-div{
+            width: 100%;
+            text-align: left;
+        }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="First_div">
+        <div class="first_Sub_Div">
+           <div class="f-s-div">
+               <i class="fas fa-paper-plane"></i>
+               <u>Lorem, ipsum dolor.</u>
+           </div>
+           <div class="s-s-div">
+            <i class="fas fa-phone-alt"></i>
+            +0000000000
+           </div>
+           <div class="t-s-div">
+            <i class="fas fa-globe"></i>
+            Canada/Eng <i class="fas fa-chevron-down"></i>
+           </div>
+        
+        </div>
+    
+    </div>
+    <div>
+        <header class="header">
+            <a class="logo">
+               <img src="assets/logo 1.png" alt="">
+           <b>KNYGA</b>.ca </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li><a href="#one" class="link link-theme link-arrow">Books <i style="padding-left:5px;" class="fas fa-chevron-down"></i></a></li>
+              <li><a href="#two" class="link link-theme link-arrow">Gift & Toys</a></li>
+              <li>
+                  <a href="">
+                    <i class="fas fa-shopping-cart cart"></i> <span class="cart-number">0</span>
+                    </a>
+              </li>
+            </ul>
+          </header>
+    </div>
+   
+<div class="product-photo">
+    <div class="photo">
+        <div class="product">
+
+            <img src="images/product1.png" alt="" onclick="clickme(this)">
+            <img src="images/product2.png" alt="" onclick="clickme(this)">
+            <img src="images/product3.png" alt="" onclick="clickme(this)">
+            <img src="images/product4.png" alt="" onclick="clickme(this)">
+            <img src="images/product4.png" alt="" onclick="clickme(this)">
+    
+        </div>
+        <div class="preview">
+            
+            <img src="images/product1.png" id="imagebox" alt="">
+            <i class="far fa-heart" style="position: absolute; padding: 8px;border: 1px solid gainsboro;border-radius: 50%;box-shadow: 2px 2px 10px rgb(196, 196, 196);"></i>
+            <p style="text-align: center; color: rgb(138, 138, 138); padding: 10px;">
+                <i class="fas fa-search-plus"> Scroll to Zoom</i>
+            </p>
+        </div>
+    </div>
+    <div class="product-details">
+        <h2 class="product-heading">Lorem ipsum dolor sit.</h2>
+        <table class="table-one">
+            <tr>
+                <td class="color-gray">Lorem.</td>
+                <td class="color-gray">Lorem.</td>
+                
+            </tr>
+            <tr>
+                <td><u>aaaaaa</u></td>
+                <td><u>aaaaaa</u></td>
+            </tr>
+        </table>
+        <p class="color-gray">Price</p>
+        <h1 class="price-size">166.51$ <small class="cut-price">190.00$</small></h1>
+        <table class="table-two">
+            <tr>
+                <td><span class="color-gray-big">aaaaaaa:</span> <span class="color-black-bold"> Wood</span></td>
+                <td><span class="color-gray-big">aaaaaaa:</span> <span class="color-black-bold"> Wood</span></td>
+            </tr>
+            <tr>
+                <td><span class="color-gray-big">aaaaaaa:</span> <span class="color-black-bold"> Wood</span></td>
+                <td><span class="color-gray-big">aaaaaaa:</span> <span class="color-black-bold"> Wood</span></td>
+            </tr>
+        </table>
+        <button class="outline-button">Add To Cart</button>
+        <button class="normal-button">Buy Now</button>
+    </div>
+</div>
+<!-- Description -->
+
+<div class="puzzle">
+    <div class="description">
+
+        <h2>Puzzle Description</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, alias a ea reprehenderit iure dicta! Minima omnis excepturi aliquam accusantium, voluptatibus, quisquam tempora et illo distinctio officiis ducimus dolores eius blanditiis odit quae ea quasi temporibus sed! Ipsum ducimus cupiditate nobis minus distinctio dolor architecto earum fugit nulla perferendis inventore sequi temporibus error ut accusantium, magnam iusto dignissimos sit hic aperiam reprehenderit quibusdam voluptatibus minima. Recusandae voluptatem ipsa ea animi consequatur nam possimus, modi asperiores facilis dolores quis quam vero, harum dolore</p>
+
+        <table>
+            <tr>
+                <td>
+                    <form action="">
+                        <input type="radio"> Lorem ipsum dolor sit amet.
+                    </form>
+                </td>
+                <td>
+                    <form action="">
+                        <input type="radio"> Lorem ipsum dolor sit amet.
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <form class="mobile-form" action="">
+            <input type="radio"> Lorem ipsum dolor sit amet. <br>
+            <input type="radio"> Lorem ipsum dolor sit amet.
+        </form>
+    </div>
+</div>
+
+
+<!-- video -->
+<div class="video">
+    <div class="playing">
+        <h2>Video About The Product</h2>
+        <video controls>
+            <source src="" type="video/mp4">
+            <source src="" type="video/ogg">
+            Your browser does not support HTML video.
+          </video>
+          
+    </div>
+</div>
+
+
+<!-- Product -->
+
+
+    <div class="product-showcase">
+        <div class="title"  >
+            <span>Similar Product</span> 
+            <a href="#" style="float: right;">View More</a>
+        </div>
+        <div class="img-pro">
+            <div class="pro-one">
+                <img class="pro-image" src="images/item1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p class="pricing">$100.18 <span>$110.20</span></p>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+            </div>
+            <div class="pro-one">
+                <img class="pro-image" src="images/item1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p class="pricing">$100.18 <span>$110.20</span></p>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+            </div>
+            <div class="pro-one">
+                <img class="pro-image" src="images/item1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p class="pricing">$100.18 <span>$110.20</span></p>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+            </div>
+            <div class="pro-one">
+                <img class="pro-image" src="images/item1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p class="pricing">$100.18 <span>$110.20</span></p>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="product-showcase">
+        <div class="title"  >
+            <span>Similar Product</span> 
+            <a href="#" style="float: right;">View More</a>
+        </div>
+        <div class="img-pro">
+            <div class="pro-one">
+                <img class="pro-image" src="images/item1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p class="pricing">$100.18 <span>$110.20</span></p>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+            </div>
+            <div class="pro-one">
+                <img class="pro-image" src="images/item1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p class="pricing">$100.18 <span>$110.20</span></p>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+            </div>
+            <div class="pro-one">
+                <img class="pro-image" src="images/item1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p class="pricing">$100.18 <span>$110.20</span></p>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+            </div>
+            <div class="pro-one">
+                <img class="pro-image" src="images/item1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p class="pricing">$100.18 <span>$110.20</span></p>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="product-showcase">
+        <div class="title"  >
+            <span>Similar Product</span> 
+            <a href="#" style="float: right;">View More</a>
+        </div>
+        <div class="img-pro">
+            <div class="pro-one">
+                <img class="pro-image" src="images/item1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p class="pricing">$100.18 <span>$110.20</span></p>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+            </div>
+            <div class="pro-one">
+                <img class="pro-image" src="images/item1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p class="pricing">$100.18 <span>$110.20</span></p>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+            </div>
+            <div class="pro-one">
+                <img class="pro-image" src="images/item1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p class="pricing">$100.18 <span>$110.20</span></p>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+            </div>
+            <div class="pro-one">
+                <img class="pro-image" src="images/item1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p class="pricing">$100.18 <span>$110.20</span></p>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="product-showcase">
+        <div class="title"  >
+            <span>Similar Product</span> 
+            <a href="#" style="float: right;">View More</a>
+        </div>
+        <div class="img-pro">
+            <div class="pro-one">
+                <img class="pro-image" src="images/item1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p class="pricing">$100.18 <span>$110.20</span></p>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+            </div>
+            <div class="pro-one">
+                <img class="pro-image" src="images/item1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p class="pricing">$100.18 <span>$110.20</span></p>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+            </div>
+            <div class="pro-one">
+                <img class="pro-image" src="images/item1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p class="pricing">$100.18 <span>$110.20</span></p>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+            </div>
+            <div class="pro-one">
+                <img class="pro-image" src="images/item1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p class="pricing">$100.18 <span>$110.20</span></p>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+  <!-- footer  -->
+
+
+    <footer class="footer-desktop">
+        <div class="footer">
+            <div class="one">
+                <a class="logo">
+                    <img src="assets/logo 1.png" alt="">
+                <b>KNYGA</b>.ca </a>
+
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, consequuntur.</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                </ul>
+                <a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="two">
+                <a href="#">Best Sellers</a> <br>
+                <a href="#">New Arrivals</a> <br>
+            </div>
+            <div class="three">
+                <a href="#">Best Sellers</a> <br>
+                <a href="#">New Arrivals</a> <br>
+                <a href="#">Best Sellers</a> <br>
+            </div>
+        </div>
+        <div class="four">
+            <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, odit.</small></p>
+        </div>
+    </footer>
+
+    <footer class="footer-mobile">
+        <div class="footer-m">
+            <div class="five">
+                <a class="logo">
+                    <img src="assets/logo 1.png" alt="">
+                <b>KNYGA</b>.ca </a>
+            </div>
+        </div>
+        <div class="footer-m-two">
+            <div class="six">
+                <a href="#">Best Sellers</a> <br>
+                <a href="#">New Arrivals</a> <br>
+            </div>
+            <div class="seven">
+                <a href="#">Best Sellers</a> <br>
+                <a href="#">New Arrivals</a> <br>
+                <a href="#">Best Sellers</a> <br>
+            </div>
+        </div>
+            
+        <div class="eight">
+                
+
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, consequuntur.</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                </ul>
+                <a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+        </div>
+        <div class="nine">
+            <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, odit.</small></p>
+        
+    </footer>
+
+
+
+    <script src="script.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
