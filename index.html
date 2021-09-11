@@ -12,66 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px ;
-            font-family: 'Poppins', sans-serif;
-        }
-        .First_div{
-           
-            width: 100%;
-            padding: 15px 10px;
-            background: #FF2DA4;
-
-           
-        }
-        .first_Sub_Div{
-            width: 85% ;
-            
-            margin: auto;
-            display: flex;
-            font-family: Poppins;
-            font-style: normal;
-            
-            font-size: 16px;
-            line-height: 28px;
-            color: #FFFFFF;           
-        }
-        .f-s-div{
-            width: 25%;
-            line-height: 28px;
-        }
-        .s-s-div{
-            width: 25%;
-            line-height: 28px;
-        }
-        .t-s-div{
-            width: 40%;
-            line-height: 28px;
-            text-align: right;
-        }
-        .First_div i{
-             padding: 0px 5px;
-        }
-        @media only screen and (max-width: 700px) {
-            .first_Sub_Div{
-                width:100% ;
-                display: block;
-            }
-            .f-s-div{
-            width: 100%;
-        }
-            .s-s-div{
-            width: 100%;
-        }
-        .t-s-div{
-            width: 100%;
-            text-align: left;
-        }
-}
-
-    </style>
 </head>
 <body>
 
@@ -83,7 +23,7 @@
            </div>
            <div class="s-s-div">
             <i class="fas fa-phone-alt"></i>
-            +0000000000
+             +0000000000
            </div>
            <div class="t-s-div">
             <i class="fas fa-globe"></i>
@@ -97,7 +37,8 @@
         <header class="header">
             <a class="logo">
                <img src="assets/logo 1.png" alt="">
-           <b>KNYGA</b>.ca </a>
+                <b>KNYGA</b>.ca
+            </a>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
@@ -115,16 +56,14 @@
 <div class="product-photo">
     <div class="photo">
         <div class="product">
-
             <img src="images/product1.png" alt="" onclick="clickme(this)">
             <img src="images/product2.png" alt="" onclick="clickme(this)">
             <img src="images/product3.png" alt="" onclick="clickme(this)">
             <img src="images/product4.png" alt="" onclick="clickme(this)">
             <img src="images/product4.png" alt="" onclick="clickme(this)">
-    
+            <i class="fas fa-chevron-down down"></i>
         </div>
         <div class="preview">
-            
             <img src="images/product1.png" id="imagebox" alt="">
             <i class="far fa-heart" style="position: absolute; padding: 8px;border: 1px solid gainsboro;border-radius: 50%;box-shadow: 2px 2px 10px rgb(196, 196, 196);"></i>
             <p style="text-align: center; color: rgb(138, 138, 138); padding: 10px;">
@@ -133,24 +72,24 @@
         </div>
     </div>
     <div class="product-details">
-        <h2 class="product-heading">Lorem ipsum dolor sit.</h2>
+        <b class="product-heading">Lorem ipsum dolor sit.</b>
         <table class="table-one">
             <tr>
-                <td class="color-gray">Lorem.</td>
-                <td class="color-gray">Lorem.</td>
+                <td class="color-gray">Manufacture</td>
+                <td class="color-gray">Categary</td>
                 
             </tr>
             <tr>
-                <td><u>aaaaaa</u></td>
+                <td><u>Funskool</u></td>
                 <td><u>aaaaaa</u></td>
             </tr>
         </table>
         <p class="color-gray">Price</p>
-        <h1 class="price-size">166.51$ <small class="cut-price">190.00$</small></h1>
+        <span class="price-size">166.51$ <small class="cut-price">190.00$</small></span>
         <table class="table-two">
             <tr>
-                <td><span class="color-gray-big">aaaaaaa:</span> <span class="color-black-bold"> Wood</span></td>
-                <td><span class="color-gray-big">aaaaaaa:</span> <span class="color-black-bold"> Wood</span></td>
+                <td><span class="color-gray-big">Material:</span> <span class="color-black-bold"> Wood</span></td>
+                <td><span class="color-gray-big">Packaging Type:</span> <span class="color-black-bold"> Wood</span></td>
             </tr>
             <tr>
                 <td><span class="color-gray-big">aaaaaaa:</span> <span class="color-black-bold"> Wood</span></td>
@@ -206,7 +145,7 @@
 </div>
 
 
-<!-- Product -->
+<!-- Product for  desktop -->
 
 
     <div class="product-showcase">
@@ -216,32 +155,32 @@
         </div>
         <div class="img-pro">
             <div class="pro-one">
-                <img class="pro-image" src="images/item1.png" alt="">
+                <img class="pro-image" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
                 <i class="far fa-heart love-icon"></i>
-                <h2>Lorem, ipsum dolor.</h2>
+                <b>Lorem, ipsum dolor.</b>
                 <p class="pricing">$100.18 <span>$110.20</span></p>
-                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+                <p class="small-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</p>
             </div>
             <div class="pro-one">
-                <img class="pro-image" src="images/item1.png" alt="">
+                <img class="pro-image" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
                 <i class="far fa-heart love-icon"></i>
-                <h2>Lorem, ipsum dolor.</h2>
+                <b>Lorem, ipsum dolor.</b>
                 <p class="pricing">$100.18 <span>$110.20</span></p>
-                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+                <p class="small-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</p>
             </div>
             <div class="pro-one">
-                <img class="pro-image" src="images/item1.png" alt="">
+                <img class="pro-image" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
                 <i class="far fa-heart love-icon"></i>
-                <h2>Lorem, ipsum dolor.</h2>
+                <b>Lorem, ipsum dolor.</b>
                 <p class="pricing">$100.18 <span>$110.20</span></p>
-                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+                <p class="small-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</p>
             </div>
             <div class="pro-one">
-                <img class="pro-image" src="images/item1.png" alt="">
+                <img class="pro-image" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
                 <i class="far fa-heart love-icon"></i>
-                <h2>Lorem, ipsum dolor.</h2>
+                <b>Lorem, ipsum dolor.</b>
                 <p class="pricing">$100.18 <span>$110.20</span></p>
-                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+                <p class="small-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</p>
             </div>
 
         </div>
@@ -255,32 +194,32 @@
         </div>
         <div class="img-pro">
             <div class="pro-one">
-                <img class="pro-image" src="images/item1.png" alt="">
+                <img class="pro-image" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
                 <i class="far fa-heart love-icon"></i>
-                <h2>Lorem, ipsum dolor.</h2>
+                <b>Lorem, ipsum dolor.</b>
                 <p class="pricing">$100.18 <span>$110.20</span></p>
-                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+                <p class="small-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</p>
             </div>
             <div class="pro-one">
-                <img class="pro-image" src="images/item1.png" alt="">
+                <img class="pro-image" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
                 <i class="far fa-heart love-icon"></i>
-                <h2>Lorem, ipsum dolor.</h2>
+                <b>Lorem, ipsum dolor.</b>
                 <p class="pricing">$100.18 <span>$110.20</span></p>
-                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+                <p class="small-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</p>
             </div>
             <div class="pro-one">
-                <img class="pro-image" src="images/item1.png" alt="">
+                <img class="pro-image" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
                 <i class="far fa-heart love-icon"></i>
-                <h2>Lorem, ipsum dolor.</h2>
+                <b>Lorem, ipsum dolor.</b>
                 <p class="pricing">$100.18 <span>$110.20</span></p>
-                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+                <p class="small-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</p>
             </div>
             <div class="pro-one">
-                <img class="pro-image" src="images/item1.png" alt="">
+                <img class="pro-image" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
                 <i class="far fa-heart love-icon"></i>
-                <h2>Lorem, ipsum dolor.</h2>
+                <b>Lorem, ipsum dolor.</b>
                 <p class="pricing">$100.18 <span>$110.20</span></p>
-                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+                <p class="small-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</p>
             </div>
 
         </div>
@@ -293,32 +232,32 @@
         </div>
         <div class="img-pro">
             <div class="pro-one">
-                <img class="pro-image" src="images/item1.png" alt="">
+                <img class="pro-image" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
                 <i class="far fa-heart love-icon"></i>
-                <h2>Lorem, ipsum dolor.</h2>
+                <b>Lorem, ipsum dolor.</b>
                 <p class="pricing">$100.18 <span>$110.20</span></p>
-                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+                <p class="small-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</p>
             </div>
             <div class="pro-one">
-                <img class="pro-image" src="images/item1.png" alt="">
+                <img class="pro-image" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
                 <i class="far fa-heart love-icon"></i>
-                <h2>Lorem, ipsum dolor.</h2>
+                <b>Lorem, ipsum dolor.</b>
                 <p class="pricing">$100.18 <span>$110.20</span></p>
-                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+                <p class="small-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</p>
             </div>
             <div class="pro-one">
-                <img class="pro-image" src="images/item1.png" alt="">
+                <img class="pro-image" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
                 <i class="far fa-heart love-icon"></i>
-                <h2>Lorem, ipsum dolor.</h2>
+                <b>Lorem, ipsum dolor.</b>
                 <p class="pricing">$100.18 <span>$110.20</span></p>
-                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+                <p class="small-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</p>
             </div>
             <div class="pro-one">
-                <img class="pro-image" src="images/item1.png" alt="">
+                <img class="pro-image" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
                 <i class="far fa-heart love-icon"></i>
-                <h2>Lorem, ipsum dolor.</h2>
+                <b>Lorem, ipsum dolor.</b>
                 <p class="pricing">$100.18 <span>$110.20</span></p>
-                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+                <p class="small-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</p>
             </div>
 
         </div>
@@ -331,32 +270,32 @@
         </div>
         <div class="img-pro">
             <div class="pro-one">
-                <img class="pro-image" src="images/item1.png" alt="">
+                <img class="pro-image" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
                 <i class="far fa-heart love-icon"></i>
-                <h2>Lorem, ipsum dolor.</h2>
+                <b>Lorem, ipsum dolor.</b>
                 <p class="pricing">$100.18 <span>$110.20</span></p>
-                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+                <p class="small-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</p>
             </div>
             <div class="pro-one">
-                <img class="pro-image" src="images/item1.png" alt="">
+                <img class="pro-image" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
                 <i class="far fa-heart love-icon"></i>
-                <h2>Lorem, ipsum dolor.</h2>
+                <b>Lorem, ipsum dolor.</b>
                 <p class="pricing">$100.18 <span>$110.20</span></p>
-                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+                <p class="small-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</p>
             </div>
             <div class="pro-one">
-                <img class="pro-image" src="images/item1.png" alt="">
+                <img class="pro-image" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
                 <i class="far fa-heart love-icon"></i>
-                <h2>Lorem, ipsum dolor.</h2>
+                <b>Lorem, ipsum dolor.</b>
                 <p class="pricing">$100.18 <span>$110.20</span></p>
-                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+                <p class="small-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</p>
             </div>
             <div class="pro-one">
-                <img class="pro-image" src="images/item1.png" alt="">
+                <img class="pro-image" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
                 <i class="far fa-heart love-icon"></i>
-                <h2>Lorem, ipsum dolor.</h2>
+                <b>Lorem, ipsum dolor.</b>
                 <p class="pricing">$100.18 <span>$110.20</span></p>
-                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</small></p>
+                <p class="small-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro consequatur vel voluptatem repellendus iusto laborum expedita, beatae officiis necessitatibus!</p>
             </div>
 
         </div>
@@ -364,8 +303,183 @@
 
 
 
-
-
+<!-- product showcase for Mobile -->
+<div class="product-showcase-mobile">
+    <div class="title-mobile">
+        <span>Similar Product</span>
+    </div>
+    <div class="pro-details-mobile">
+        <div class="img-pro-mbl">
+            <div class="img-pro-mbl-one">
+                <img class="pro-img-mobile" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <span class="pro-title-mbl">Lorem, ipsum dolor.</span> <br>
+                <span><b class="pink-price">$100.18</b></span><span class="cut-price-mbl">$110.36</span>
+                <p class="para-mbl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, excepturi.....</p>
+            </div>
+            <div class="img-pro-mbl-one">
+                <img class="pro-img-mobile" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <span class="pro-title-mbl">Lorem, ipsum dolor.</span> <br>
+                <span><b class="pink-price">$100.18</b></span><span class="cut-price-mbl">$110.36</span>
+                <p class="para-mbl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, excepturi.....</p>
+            </div>
+            
+        </div>
+        <div class="img-pro-mbl">
+            <div class="img-pro-mbl-one">
+                <img class="pro-img-mobile" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <span class="pro-title-mbl">Lorem, ipsum dolor.</span> <br>
+                <span><b class="pink-price">$100.18</b></span><span class="cut-price-mbl">$110.36</span>
+                <p class="para-mbl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, excepturi.....</p>
+            </div>
+            <div class="img-pro-mbl-one">
+                <img class="pro-img-mobile" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <span class="pro-title-mbl">Lorem, ipsum dolor.</span> <br>
+                <span><b class="pink-price">$100.18</b></span><span class="cut-price-mbl">$110.36</span>
+                <p class="para-mbl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, excepturi.....</p>
+            </div>
+            
+        </div>
+        <div class="view-mobile">
+            <a href="#">View All Similar Products</a>
+        </div>
+    </div>
+</div>
+<div class="product-showcase-mobile">
+    <div class="title-mobile">
+        <span>Similar Product</span>
+    </div>
+    <div class="pro-details-mobile">
+        <div class="img-pro-mbl">
+            <div class="img-pro-mbl-one">
+                <img class="pro-img-mobile" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <span class="pro-title-mbl">Lorem, ipsum dolor.</span> <br>
+                <span><b class="pink-price">$100.18</b></span><span class="cut-price-mbl">$110.36</span>
+                <p class="para-mbl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, excepturi.....</p>
+            </div>
+            <div class="img-pro-mbl-one">
+                <img class="pro-img-mobile" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <span class="pro-title-mbl">Lorem, ipsum dolor.</span> <br>
+                <span><b class="pink-price">$100.18</b></span><span class="cut-price-mbl">$110.36</span>
+                <p class="para-mbl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, excepturi.....</p>
+            </div>
+            
+        </div>
+        <div class="img-pro-mbl">
+            <div class="img-pro-mbl-one">
+                <img class="pro-img-mobile" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <span class="pro-title-mbl">Lorem, ipsum dolor.</span> <br>
+                <span><b class="pink-price">$100.18</b></span><span class="cut-price-mbl">$110.36</span>
+                <p class="para-mbl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, excepturi.....</p>
+            </div>
+            <div class="img-pro-mbl-one">
+                <img class="pro-img-mobile" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <span class="pro-title-mbl">Lorem, ipsum dolor.</span> <br>
+                <span><b class="pink-price">$100.18</b></span><span class="cut-price-mbl">$110.36</span>
+                <p class="para-mbl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, excepturi.....</p>
+            </div>
+            
+        </div>
+        <div class="view-mobile">
+            <a href="#">View All Similar Products</a>
+        </div>
+    </div>
+</div>
+<div class="product-showcase-mobile">
+    <div class="title-mobile">
+        <span>Similar Product</span>
+    </div>
+    <div class="pro-details-mobile">
+        <div class="img-pro-mbl">
+            <div class="img-pro-mbl-one">
+                <img class="pro-img-mobile" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <span class="pro-title-mbl">Lorem, ipsum dolor.</span> <br>
+                <span><b class="pink-price">$100.18</b></span><span class="cut-price-mbl">$110.36</span>
+                <p class="para-mbl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, excepturi.....</p>
+            </div>
+            <div class="img-pro-mbl-one">
+                <img class="pro-img-mobile" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <span class="pro-title-mbl">Lorem, ipsum dolor.</span> <br>
+                <span><b class="pink-price">$100.18</b></span><span class="cut-price-mbl">$110.36</span>
+                <p class="para-mbl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, excepturi.....</p>
+            </div>
+            
+        </div>
+        <div class="img-pro-mbl">
+            <div class="img-pro-mbl-one">
+                <img class="pro-img-mobile" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <span class="pro-title-mbl">Lorem, ipsum dolor.</span> <br>
+                <span><b class="pink-price">$100.18</b></span><span class="cut-price-mbl">$110.36</span>
+                <p class="para-mbl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, excepturi.....</p>
+            </div>
+            <div class="img-pro-mbl-one">
+                <img class="pro-img-mobile" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <span class="pro-title-mbl">Lorem, ipsum dolor.</span> <br>
+                <span><b class="pink-price">$100.18</b></span><span class="cut-price-mbl">$110.36</span>
+                <p class="para-mbl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, excepturi.....</p>
+            </div>
+            
+        </div>
+        <div class="view-mobile">
+            <a href="#">View All Similar Products</a>
+        </div>
+    </div>
+</div>
+<div class="product-showcase-mobile">
+    <div class="title-mobile">
+        <span>Similar Product</span>
+    </div>
+    <div class="pro-details-mobile">
+        <div class="img-pro-mbl">
+            <div class="img-pro-mbl-one">
+                <img class="pro-img-mobile" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <span class="pro-title-mbl">Lorem, ipsum dolor.</span> <br>
+                <span><b class="pink-price">$100.18</b></span><span class="cut-price-mbl">$110.36</span>
+                <p class="para-mbl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, excepturi.....</p>
+            </div>
+            <div class="img-pro-mbl-one">
+                <img class="pro-img-mobile" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <span class="pro-title-mbl">Lorem, ipsum dolor.</span> <br>
+                <span><b class="pink-price">$100.18</b></span><span class="cut-price-mbl">$110.36</span>
+                <p class="para-mbl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, excepturi.....</p>
+            </div>
+            
+        </div>
+        <div class="img-pro-mbl">
+            <div class="img-pro-mbl-one">
+                <img class="pro-img-mobile" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <span class="pro-title-mbl">Lorem, ipsum dolor.</span> <br>
+                <span><b class="pink-price">$100.18</b></span><span class="cut-price-mbl">$110.36</span>
+                <p class="para-mbl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, excepturi.....</p>
+            </div>
+            <div class="img-pro-mbl-one">
+                <img class="pro-img-mobile" src="assets/31101-monster-truck-lego-original-imaftdyreyqhrv2z 1.png" alt="">
+                <i class="far fa-heart love-icon"></i>
+                <span class="pro-title-mbl">Lorem, ipsum dolor.</span> <br>
+                <span><b class="pink-price">$100.18</b></span><span class="cut-price-mbl">$110.36</span>
+                <p class="para-mbl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, excepturi.....</p>
+            </div>
+            
+        </div>
+        <div class="view-mobile">
+            <a href="#">View All Similar Products</a>
+        </div>
+    </div>
+</div>
 
 
   <!-- footer  -->
